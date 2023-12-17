@@ -38,7 +38,3 @@ open index.html
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
----
-
-You can customize this `README.md` to better fit your application's context, including providing more specific instructions or descriptions as needed. Remember to replace `[your-repo-link]` and `[your-repo-directory]` with the actual URL and name of your repository.
