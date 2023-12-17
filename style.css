@@ -1,38 +1,36 @@
+/* CSS for desktop */
 #gameBoard {
-    border-collapse: collapse;
+    width: 75vmin;
+    height: 75vmin;
     margin: auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    transition: border-radius 0.5s ease;
 }
 
 /* Style for circle cells */
 .circle {
-    border-radius: 50%; /* This creates the circular shape */
+    border-radius: 50%;
 }
 
 /* You may need to adjust the size of the cells to ensure circles fit well */
 #gameBoard td {
-    width: 40px;
-    height: 40px;
     background-color: white;
     border: 1px solid lightgray;
     text-align: center;
     vertical-align: middle;
-    line-height: 40px;
-    transition: border-radius 0.3s ease, border-color 0.3s ease;
+    transition: border-radius 0.5s ease, border-color 0.5s ease;
 }
 
 #gameBoard td.circle {
-    border-color: rgba(211, 211, 211, 0.4);
-}
-
-/* Optionally, change the table border color when cells are circles */
-#gameBoard.circle {
-    border-color: rgba(211, 211, 211, 0.4);
+    border-radius: 50%;
+    border-color: rgba(211, 211, 211, 0.6);
 }
 
 #clickCount {
     text-align: center;
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 7vh;
     color: #333;
 }
 
@@ -73,19 +71,31 @@
 /* Style for the title */
 h1 {
     text-align: center;
+    font-size: 7vh;
+    margin-bottom: 20px;
 }
 
 /* Styles for the toggle switch */
 .center-container {
-    text-align: center;
-    margin: 10px 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 40px;
+    width: fit-content;
+}
+
+#toggleLabel {
+    font-size: 4vh;
+    margin-left: 10px;
 }
 
 .switch {
     position: relative;
     display: inline-block;
-    width: 40px;
-    height: 22px;
+    width: 7vw;
+    height: 3.5vw;
+    max-width: 70px;
+    max-height: 36px;
     margin: 0 auto;
 }
 
@@ -104,16 +114,16 @@ h1 {
     bottom: 0;
     background-color: #ccc;
     transition: .4s;
-    border-radius: 34px;
+    border-radius: 36px;
 }
 
 .slider:before {
     position: absolute;
     content: "";
-    height: 18px;
-    width: 18px;
-    left: 2px;
-    bottom: 2px;
+    height: 30px;
+    width: 30px;
+    left: 3px;
+    bottom: 3px;
     background-color: white;
     transition: .4s;
     border-radius: 50%;
@@ -128,19 +138,8 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(18px);
+  transform: translateX(34px);
 }
 
-/* Rounded slider */
-.slider.round {
-  border-radius: 34px;
-}
 
-.slider.round:before {
-  border-radius: 50%;
-}
-
-#toggleLabel {
-  display: inline;
-}
 
