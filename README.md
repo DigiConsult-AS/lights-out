@@ -1,7 +1,3 @@
-Certainly! Here's a sample `README.md` file for your application:
-
----
-
 # Lights Out
 
 ## Description
@@ -37,4 +33,4 @@ open index.html
 ```
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
