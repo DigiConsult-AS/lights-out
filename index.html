@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Board Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <h1>Lights Out</h1>
+    
+    <div class="center-container">
+        <label class="switch">
+            <input type="checkbox" id="shapeToggle">
+            <span class="slider round"></span>
+        </label>
+        <span id="toggleLabel">Squares</span>
+    </div>
+    
+    <div>
+      <table id="gameBoard">
+          <!-- JavaScript will populate the board -->
+      </table>
+    </div>
+    
+    <div>
+      <p id="clickCount">Clicks: 0</p>
+    </div>
+
+    <div id="winModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Congratulations! You've won the game!</p>
+          <button id="playAgain">Play Again</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
