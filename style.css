@@ -1,7 +1,7 @@
 /* CSS for desktop */
 #gameBoard {
-    width: 75vmin;
-    height: 75vmin;
+    width: 65vmin;
+    height: 65vmin;
     margin: auto;
     border-collapse: collapse;
     table-layout: fixed;
