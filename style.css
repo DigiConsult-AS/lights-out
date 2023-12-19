@@ -1,9 +1,38 @@
-/* CSS for desktop */
+body {
+    font-family: 'Roboto', serif;
+    font-size: 36px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 4vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 4vh;
+}
+
+/* Style for the board */
 #gameBoard {
-    width: 65vmin;
-    height: 65vmin;
+    width: 50vmin;
+    height: 50vmin;
     margin: auto;
-    border-collapse: collapse;
     table-layout: fixed;
     transition: border-radius 0.5s ease;
 }
@@ -29,21 +58,21 @@
 
 #clickCount {
     text-align: center;
-    margin-top: 20px;
-    font-size: 7vh;
+    margin-top: 10px;
+    font-size: 5vh;
     color: #333;
 }
 
 .modal {
-    display: none; 
-    position: fixed; 
+    display: none;
+    position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; 
+    width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
@@ -68,13 +97,6 @@
     cursor: pointer;
 }
 
-/* Style for the title */
-h1 {
-    text-align: center;
-    font-size: 7vh;
-    margin-bottom: 20px;
-}
-
 /* Styles for the toggle switch */
 .center-container {
     display: flex;
@@ -85,21 +107,21 @@ h1 {
 }
 
 #toggleLabel {
-    font-size: 4vh;
+    font-size: 2vh;
     margin-left: 10px;
 }
 
 .switch {
     position: relative;
     display: inline-block;
-    width: 7vw;
-    height: 3.5vw;
-    max-width: 70px;
-    max-height: 36px;
+    width: 4vh;
+    height: 2vh;
+    /*max-width: 70px;
+    max-height: 36px;*/
     margin: 0 auto;
 }
 
-.switch input { 
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
@@ -114,32 +136,29 @@ h1 {
     bottom: 0;
     background-color: #ccc;
     transition: .4s;
-    border-radius: 36px;
+    border-radius: 2vh;
 }
 
 .slider:before {
     position: absolute;
     content: "";
-    height: 30px;
-    width: 30px;
-    left: 3px;
-    bottom: 3px;
+    height: 1.8vh;
+    width: 1.8vh;
+    left: 0.1vh;
+    bottom: 0.1vh;
     background-color: white;
     transition: .4s;
     border-radius: 50%;
 }
 
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
+input:checked+.slider {
     background-color: #2196F3;
 }
 
-input:checked + .slider:before {
-  transform: translateX(34px);
+input:focus+.slider {
+    background-color: #2196F3;
 }
 
-
-
+input:checked+.slider:before {
+    transform: translateX(2vh);
+}
