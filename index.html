@@ -3,7 +3,7 @@
 <head>
     <title>Board Game</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
 </head>
 <body>
     <h1>Lights Out</h1>
@@ -18,7 +18,6 @@
     
     <div>
       <table id="gameBoard">
-          <!-- JavaScript will populate the board -->
       </table>
     </div>
     
@@ -29,10 +28,13 @@
     <div id="winModal" class="modal">
       <div class="modal-content">
           <span class="close">&times;</span>
-          <p>Congratulations! You've won the game!</p>
-          <button id="playAgain">Play Again</button>
+          <h2>Congratulations! You've won the game!</h2>
+          <div class="center-container">
+            <button id="playAgain">Play Again</button>
+          </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
