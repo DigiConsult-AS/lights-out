@@ -82,6 +82,8 @@ $(document).ready(function() {
     // Reset the game
     function resetGame() {
         $('#gameBoard td').css('background-color', 'white');
+        clickCounter = 0;
+        $('#clickCount').text('Clicks: ' + clickCounter);
     }
 
 });
